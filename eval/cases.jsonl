@@ -1,0 +1,10 @@
+{"id": "holiday-20h", "question": "주 20시간 일하는 알바 시급 10,320원이면 주휴수당이 얼마예요? 결근은 없어요.", "expected_tool": "weekly_holiday_pay", "expected_numbers": ["41,280"]}
+{"id": "holiday-14h", "question": "주 14시간 일하는 알바도 주휴수당 줘야 하나요? 시급은 10,320원이에요.", "expected_tool": "weekly_holiday_pay", "expected_numbers": ["15시간"]}
+{"id": "holiday-40h", "question": "시급 10,320원에 주 40시간 일하는 직원 주휴수당은요? 개근했어요.", "expected_tool": "weekly_holiday_pay", "expected_numbers": ["82,560"]}
+{"id": "minwage-ok", "question": "주 40시간 직원 월급 215만 6,880원이면 최저임금 위반인가요?", "expected_tool": "check_minimum_wage", "expected_numbers": ["2,156,880"]}
+{"id": "minwage-bad", "question": "주 40시간 근무 직원 월급을 210만원 주고 있는데 괜찮나요?", "expected_tool": "check_minimum_wage", "expected_numbers": ["56,880"]}
+{"id": "insurance-3m", "question": "월급 300만원 직원의 4대보험 근로자 부담금이 얼마예요? 우리 가게는 직원 3명이에요.", "expected_tool": "social_insurance", "expected_numbers": ["142,500", "107,850", "14,170", "27,000"]}
+{"id": "overtime-4ppl", "question": "직원 4명인 가게인데 시급 10,320원 직원이 연장근무 10시간 했어요. 수당 얼마 줘야 해요?", "expected_tool": "overtime_pay", "expected_numbers": ["103,200"]}
+{"id": "overtime-5ppl", "question": "직원 6명인 식당이에요. 시급 12,000원 직원이 연장근무 5시간 했으면 연장수당은요?", "expected_tool": "overtime_pay", "expected_numbers": ["90,000"]}
+{"id": "law-annual-leave-4", "question": "직원 4명인데 연차 줘야 하나요?", "expected_tool": "search_law", "expected_numbers": ["제60조"]}
+{"id": "law-severance", "question": "알바가 1년 2개월 일하고 그만뒀는데 퇴직금 줘야 해요? 주 25시간 일했어요.", "expected_tool": "search_law", "expected_numbers": ["1년"]}

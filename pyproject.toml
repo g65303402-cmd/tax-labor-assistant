@@ -1,0 +1,26 @@
+[project]
+name = "tax-labor-assistant"
+version = "0.1.0"
+description = "소상공인 세무·노무 AI 비서 (로컬 LLM)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic-settings>=2.4",
+    "httpx>=0.27",
+    "openai>=1.50",            # 로컬 Ollama/vLLM의 OpenAI 호환 엔드포인트용 클라이언트
+    "qdrant-client>=1.12",
+    "sentence-transformers>=3.0",
+    "streamlit>=1.38",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
